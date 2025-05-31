@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="register">
+        <h1 class="title">register</h1>
+        <form action="" method="post" class="formregister">
+            <label for="username"> Display name : </label>
+            <input type="name" name="username" id="username" placeholder="your name ...">
+            <label for="useremail"> Email : </label>
+            <input type="email" name="email" id="useremail" placeholder="your email ...">
+            <label for="usernumber"> Phone number : </label>
+            <input type="number" name="number" id="usernumber" placeholder="your number ...">
+            <label for="userpassword"> Password : </label>
+            <input type="password" name="password" id="userpassword" placeholder="your password ...">
+            <label for="confirmpassword">Confirm Password:</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" required placeholder="confirm your password">
+            <div class="formgender">
+                <label class="formgender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            <label for="userdate"> Date of birth : </label>
+            <input type="date" name="date" id="userdate" placeholder="Date of birth...">
+            <label for="city">Address:</label><br>
+            <select id="city" name="city" required>
+                <option value="">-- choose city --</option>
+                <option value="hanoi">Hà Nội</option>
+                <option value="danang">Đà Nẵng</option>
+                <option value="hcm">TP. Hồ Chí Minh</option>
+                <option value="cantho">Cần Thơ</option>
+                <option value="haiphong">Hải Phòng</option>
+            </select>
+
+        </form>
+             <div class="option">
+                <label>
+                    <input type="checkbox" name="email_type" value="newsletter">
+                    <span>Subscribe to Newsletter</span> <em>(Nhận bản tin định kỳ)</em>
+                </label>
+                <label>
+                    <input type="checkbox" name="email_type" value="promotional">
+                    <span>Receive Promotional Emails</span> <em>(Nhận thông tin khuyến mãi)</em>
+                </label>
+                <label>
+                    <input type="checkbox" name="email_type" value="product_updates">
+                    <span>Get Product Updates</span> <em>(Nhận cập nhật sản phẩm mới)</em>
+                </label>
+            </div>
+            <label for="avatarInput" class="avatar-wrapper">
+                <img src="./image/avartar.png" alt="avatar" class="avatar">
+            </label>
+            <input type="file" id="avatarInput" accept="image/*">
+            
+            <button type="submit" > Register</button>
+    </div>
+</body>
+</html>
