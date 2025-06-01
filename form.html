@@ -9,17 +9,17 @@
 <body>
     <div class="register">
         <h1 class="title">register</h1>
-        <form action="" method="post" class="formregister">
+        <form action="" method="post" class="formregister" autocomplete="off">
             <label for="username"> Display name : </label>
-            <input type="name" name="username" id="username" placeholder="your name ...">
+            <input type="name" name="username" id="username"spellcheck="false" placeholder="your name ...">
             <label for="useremail"> Email : </label>
-            <input type="email" name="email" id="useremail" placeholder="your email ...">
+            <input type="email" name="email" id="useremail" spellcheck="false"placeholder="your email ...">
             <label for="usernumber"> Phone number : </label>
-            <input type="number" name="number" id="usernumber" placeholder="your number ...">
+            <input type="number" name="number" id="usernumber"spellcheck="false" placeholder="your number ...">
             <label for="userpassword"> Password : </label>
-            <input type="password" name="password" id="userpassword" placeholder="your password ...">
+            <input type="password" name="password" id="userpassword"spellcheck="false" placeholder="your password ...">
             <label for="confirmpassword">Confirm Password:</label>
-            <input type="password" id="confirmpassword" name="confirmpassword" required placeholder="confirm your password">
+            <input type="password" id="confirmpassword" name="confirmpassword" spellcheck="false"required placeholder="confirm your password">
             <div class="formgender">
                 <label class="formgender">Gender:</label>
                 <input type="radio" id="male" name="gender" value="male">
@@ -30,7 +30,7 @@
                 <label for="other">Other</label>
             </div>
             <label for="userdate"> Date of birth : </label>
-            <input type="date" name="date" id="userdate" placeholder="Date of birth...">
+            <input type="date" name="date" id="userdate"spellcheck="false" placeholder="Date of birth...">
             <label for="city">Address:</label><br>
             <select id="city" name="city" required>
                 <option value="">-- choose city --</option>
@@ -44,15 +44,15 @@
         </form>
              <div class="option">
                 <label>
-                    <input type="checkbox" name="email_type" value="newsletter">
+                    <input type="checkbox" name="email_type" value="newsletter" spellcheck="false">
                     <span>Subscribe to Newsletter</span> <em>(Nhận bản tin định kỳ)</em>
                 </label>
                 <label>
-                    <input type="checkbox" name="email_type" value="promotional">
+                    <input type="checkbox" name="email_type" value="promotional"spellcheck="false">
                     <span>Receive Promotional Emails</span> <em>(Nhận thông tin khuyến mãi)</em>
                 </label>
                 <label>
-                    <input type="checkbox" name="email_type" value="product_updates">
+                    <input type="checkbox" name="email_type" value="product_updates"spellcheck="false">
                     <span>Get Product Updates</span> <em>(Nhận cập nhật sản phẩm mới)</em>
                 </label>
             </div>
